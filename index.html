@@ -5,10 +5,37 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="js/application.js"></script>
-
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
 </head>
 <body>
+  <form id="post_form"> 
+    <input class="form input-sm" type="text" placeholder="Post Id put" id="post_id_put">
+    <input class="form input-sm" type="text" placeholder="username" id="username">
+    <input class="form input-sm" type="text" placeholder="title" id="title">
+    <input class="form input-sm" type="text" placeholder="Text" id="text">
+    <button id="create">CREATE POST</button>
+    <button id="get">GET ALL</button>
+    <button id="put">UPDATE POST</button>
+  </form>
+  <form id="delete_form"> 
+    <input class="form input-sm" type="text" placeholder="Post Id" id="post_id">
+    <button id="delete">DELETE POST</button>
+  </form>
+  <section id="list">
+    <table>
+      <thead>
+        <tr>
+          <td>Id</td>
+          <td>Username</td>
+          <td>Title</td>
+          <td>Text</td>
+        </tr>
+      </thead>
+      <tbody id="posts">
+        
+      </tbody>
+    </table>
+  </section>
 </body>
 </html>
